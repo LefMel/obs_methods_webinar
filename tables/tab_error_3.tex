@@ -1,0 +1,30 @@
+\documentclass{beamer}
+
+\usepackage{multirow}
+\usepackage{rotating}
+
+\begin{document}
+
+\hoffset=-1in
+\voffset=-1in
+\setbox0\hbox{
+
+\begin{tabular}{lcc}
+\hline
+ & \multicolumn{2}{c}{\textbf{True disease status}} \\ \cline{2-3}
+ & Disease is present  & Disease is absent \\ 
+\textbf{Surveillance outcome}& \scriptsize{$p(D^+) =  \pi_t$}  & \scriptsize{$p(D^-) = 1-\pi_t$} \\ \cline{1-3}
+%                      &&&\\
+ Disease is present ($O^+$) & $SSe.\pi_t$ & $0$ \\
+ Disease is absent ($O^-$)  & $(1 - SSe).\pi_t$ & $1-\pi_t$\\
+%&&&\\
+\hline 
+\end{tabular}
+
+}
+\pdfpageheight=\dimexpr\ht0+\dp0\relax
+\pdfpagewidth=\wd0
+\shipout\box0
+
+
+\stop

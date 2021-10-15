@@ -1,0 +1,352 @@
+---
+title: "Output-based methodological approaches for substantiating freedom from infection"
+subtitle: "SOUND control - Working group 3"
+date: "2021-11-09 (updated: `r Sys.Date()`)"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+```
+
+class: inverse, center, middle
+
+# Objectives
+
+---
+# Objectives
+
+By the end of this presentation, you should understand:
+
+- the main epidemiological and statistical considerations for the estimation of a probability of freedom from infection
+
+- the principles of some of the methods used, their advantages and limitations
+
+---
+class: inverse, center, middle
+
+# Epidemiological and methodological considerations for the estimation of freedom from infection
+
+---
+## Freedom from infection as a statistical problem
+
+- Evidence of infection sought by testing animals from the population of interest
+
+--
+
+ - Testing all the animals is usually too costly $\rightarrow$ sampling
+ 
+--
+
+ - $\geq 1$ (true) positive $\rightarrow$ infection is present
+ 
+--
+
+ - 0 test positive $\rightarrow$ infection is absent OR infection is present, but no infected included in the sample
+
+--
+
+
+- Most of the time, the problem consists in **quantifying the probability that the infection is not present given that it has not been detected**
+
+--
+
+- The question can be formulated as: 
+
+ - **how sure are we that the infection is truly absent given that we did not find it?** or
+
+ - **what is the probability of a false negative surveillance outcome?**
+
+---
+class: inverse, center, middle
+![](figs/black_swans_popper.jpg)
+
+---
+## Freedom from infection as a statistical problem
+
+- Consider a large population in which 20% of animals are infected
+
+- 10 animals of this population are tested with a perfect test
+
+- Below is the distribution of the number of positives we would get if we could take many samples of 10 animals
+
+```{r, echo = FALSE, fig.width = 12, fig.height = 6}
+limy <- c(0, .35)
+x <- dbinom(0:10, 10, .2)
+barplot(x, ylim = limy,
+        names.arg = 0:10,
+        xlab = "Number of test positives out of 10 animals tested", 
+        cex.lab = 1.5)
+```
+---
+## Freedom from infection as a statistical problem
+
+- Consider a large population in which 20% of animals are infected
+
+- 20 animals of this population are tested with a perfect test
+
+- Below is the distribution of the number of positives we would get if we could take many samples of 20 animals
+
+```{r, echo = FALSE, fig.width = 12, fig.height = 6}
+x <- dbinom(0:10, 20, .2)
+barplot(x, ylim = limy,
+        names.arg = 0:10,
+        xlab = "Number of test positives out of 100 animals tested", 
+        cex.lab = 1.5)
+```
+
+---
+## Freedom from infection as a statistical problem
+
+- Consider a large population in which 1% of animals are infected
+
+- 20 animals of this population are tested with a perfect test
+
+- Below is the distribution of the number of positives we would get if we could take many samples of 20 animals
+
+```{r, echo = FALSE, fig.width = 12, fig.height = 6}
+x <- dbinom(0:10, 20, .01)
+barplot(x,
+        names.arg = 0:10,
+        xlab = "Number of test positives out of 100 animals tested", 
+        cex.lab = 1.5)
+```
+
+---
+## Freedom from infection as a statistical problem
+
+- When testing 10 animals in a population with a prevalence of infection of 20%, there is a 10.7% chance of getting no test positive
+
+ - The probability of a false negative surveillance outcome is:
+
+$$p(X = 0| n = 10, \pi = 0.2) = 0.107$$
+
+--
+
+- When testing 20 animals in a population with a prevalence of infection of 20%, the probability of a false negative surveillance outcome is:
+
+$$p(X = 0| n = 20, \pi = 0.2) = 0.01$$
+
+--
+
+- When testing 20 animals in a population with a prevalence of infection of 1%, the probability of a false negative surveillance outcome is:
+
+$$p(X = 0| n = 20, \pi = 0.01) = 0.818$$
+
+--
+
+- What happens if the prevalence is 0?
+
+---
+## Freedom from infection as a statistical problem
+
+- Probability of a false negative surveillance outcome $\nearrow$ when:
+
+ - sample size $\searrow$
+ 
+ - prevalence $\searrow$
+ 
+--
+
+- But usually, the **true prevalence** is not known
+
+ - We now how to estimate $p(X = 0|n, \pi)$
+ 
+ - We would like to know $p(\pi = 0 | X = 0, n)$
+
+
+---
+## Freedom from infection as a statistical problem
+
+- Chosen approach: use of a **design prevalence**
+
+--
+
+- Principle:
+
+ - Assume that the disease is present at some chosen prevalence $\pi_t$, called the *design prevalence*
+ 
+ - Make hypotheses that can be tested from this design prevalence
+
+ $$H_o: \pi \geq \pi_t$$
+ $$H_A: \pi < \pi_t$$
+ 
+--
+ 
+ - Construct confidence intervals, estimate probabilities of error from these hypotheses
+
+```{r, echo = FALSE, message=FALSE}
+magick::image_read_pdf("./tables/tab_error_1.pdf")
+```
+
+---
+# What is a probability, **frequentist version**
+
+- Probabilities as frequencies of events
+
+--
+
+- The probability of drawing an infected animal when randomly sampling from a large population is the infection prevalence
+ 
+--
+
+- When estimating prevalence by randomly sampling from a large population, the estimation will get closer and closer to the true prevalence as sample size increases
+
+---
+# What is a probability, **Bayesian version**
+
+- Probabilities as hypotheses derived from evidence, knowledge or belief
+
+--
+
+- The probability of foot and mouth disease being introduced in Sweden cannot be estimated from past occurrences
+
+ - Plausible values for this probability of introduction could be proposed by considering all the possible routes of introduction and adding the probabilities of occurrence of each one
+ 
+--
+
+- Rare / emerging events have small probabilities of occurrence that prevent the estimation of frequencies 
+
+---
+# Output-based standards
+
+- Objective of output-based surveillance: produce outputs that are independent of the input and method of analysis used
+
+--
+
+- What are these outputs?
+
+ - (Specificity of surveillance)
+ 
+ - Sensitivity of surveillance
+ 
+ - Probability of freedom from infection
+ 
+ - Expected cost of error
+ 
+ - $\ldots$
+
+--
+
+```{r, echo = FALSE, message=FALSE}
+magick::image_read_pdf("./tables/tab_error_2.pdf")
+```
+
+---
+# Specificity of surveillance
+
+- Probability of a negative surveillance outcome when the infection is absent (true negative):
+
+ $$SSp = p(O^-|D^-)$$
+
+ - Usually assumed to be 1 (i.e. no false positive) $\rightarrow$ every positive test will be investigated until either proven to be a false positive or confirmed as a true positive
+ 
+```{r, echo = FALSE, message=FALSE}
+magick::image_read_pdf("./tables/tab_error_2.pdf")
+```
+
+---
+# Sensitivity of surveillance
+
+- Probability of a positive surveillance outcome when the infection is present (at the design prevalence)
+
+ $$SSe = p(O^+|D^+)$$
+
+```{r, echo = FALSE, message=FALSE}
+magick::image_read_pdf("./tables/tab_error_2.pdf")
+```
+
+---
+# Probability of freedom from infection
+
+- Probability that the infection is absent when the outcome of surveillance is negative
+
+  $$P_{free} = p(D^-|O^-)$$
+
+
+```{r, echo = FALSE, message=FALSE}
+magick::image_read_pdf("./tables/tab_error_2.pdf")
+```
+
+- is in fact a negative predictive value
+
+  $$P_{free} = \frac{SSp.(1 - \pi_t)}{SSp.(1 - \pi_t) + (1-SSe) . \pi_t}$$
+  
+---
+# Probability of freedom from infection
+
+- Probability that the infection is absent when the outcome of surveillance is negative
+
+  $$P_{free} = p(D^-|O^-)$$
+
+
+```{r, echo = FALSE, message=FALSE}
+magick::image_read_pdf("./tables/tab_error_3.pdf")
+```
+
+- since $SSp = 1$, can be written as:
+
+  $$P_{free} = \frac{1 - \pi_t}{1-SSe.\pi_t}$$
+
+---
+# Expected cost of error
+
+- Estimation of the cost of undetected infections
+
+ $$ECE = (1 - P_{free}) . Cost_{error}$$
+ 
+- Can be used to justify the total cost of surveillance
+
+ $$TSC = Cost_{surveillance}+(1 - P_{free}).Cost_{error}$$
+
+---
+# Other outputs
+
+- More recently, indicators of early detection considered, although not strictly related to infection freedom
+
+ - Influence on the cost of error $\rightarrow$ the longer the time between introduction of infection, the higher the resulting costs
+
+![](figs/outputs.png)
+
+
+---
+## Impact of disease prevalence context on surveillance objectives
+
+1. Infection is absent from area (e.g. BVDV in Scandinavian countries)
+ 
+ - **Objective of surveillance =** prove to trading partners that it is safe to trade with you
+ 
+ - **Level at which proof of freedom is sought =** whole area
+ 
+--
+
+1. Infection is still present (e.g. BVDV in France)
+
+ - **Objective of surveillance =** identify herds / regions that are safe to trade with
+ 
+ - **Level at which proof of freedom is sought =** herd / region
+
+---
+## Making inference
+
+
+---
+## Diversity in surveillance programmes
+
+
+---
+## Factors affecting the performance of surveillance
+
+
+---
+class: inverse, center, middle
+
+# Methods for output-based surveillance
+
+
