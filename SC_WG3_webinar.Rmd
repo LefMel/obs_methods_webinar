@@ -509,34 +509,3 @@ $$P_{free} = p(D^-|O^-)$$
 ![](figs/sound_control.png)
 
 
-=======
-- Applied to complex surveillance schemes (multiple surveillance components)
-
-- Described in Hood et al (2009)
-
-
----
-## Bayesian Belief Networks (II)
-
----
-## Simulation models
-
-- Stochastic simulations
-
-- Described in Meyet et al (2019)
-
-
----
-## Bayesian prevalence estimation methods
-
----
-# Historical context
-
----
-# Bayesian hierarchical true prevalence estimation
-
-- Assume absence of a perfect reference test
----
-## STOC free model
-
->>>>>>> 405d207fe5fefe46b6ba79b2bd68b9706cf9308f
