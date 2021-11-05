@@ -374,6 +374,7 @@ $$Sp = p(T^-|I^-)$$
 # Frequency of testing
 
 ![](figs/frequency_testing.png)
+
 ---
 class: inverse, center, middle
 # Methods for output-based surveillance
@@ -382,10 +383,9 @@ class: inverse, center, middle
 ---
 # Objectives of this section
 
-
 - review state-of-the-art methods used for output-based surveillance
 ---
-## Secenario tree modelling (I)
+# Scenario tree modelling (I)
 
 - Method to estimate probability of freedom from infection 
 
@@ -394,7 +394,7 @@ class: inverse, center, middle
 - Described in Martin et al (2007)
 
 ---
-# Secenario tree modelling (II)
+# Scenario tree modelling (II)
 
 ### Output $\rightarrow$ Surveillance sensitivity
 
@@ -406,11 +406,12 @@ $$SSe = p(O^+|D^+)$$
 
 $$P_{free} = p(D^-|O^-)$$
 ---
-## Scenario Tree modelling (III)
+# Scenario Tree modelling (III)
 
 ![](figs/scenario_tree_figure.png)
+
 ---
-## Bayesian Belief Networks (I)
+# Bayesian Belief Networks (I)
 
 - Method to estimate probability of freedom from infection
 
@@ -421,7 +422,7 @@ $$P_{free} = p(D^-|O^-)$$
 - Described in Hood et al (2009)
 
 ---
-## Bayesian Belief Networks (II)
+# Bayesian Belief Networks (II)
 
 - Probabilistic graphical model 
 
@@ -429,11 +430,11 @@ $$P_{free} = p(D^-|O^-)$$
 - Relationship between variables/Dependence $\rightarrow$ edges/arcs
 
 ---
-## Bayesian Belief Networks (III)
+# Bayesian Belief Networks (III)
 
 ![](figs/bayesian_network.png)
 ---
-## Simulation models (I)
+# Simulation models (I)
 
 - presence or spread of diseases and their detection with a great flexibility in terms of the range and complexity of assumptions
 
@@ -442,7 +443,7 @@ $$P_{free} = p(D^-|O^-)$$
 - Described in Meyer et al (2019); Rosendal et al (2020)
 
 ---
-## Simulation models (II)
+# Simulation models (II)
 
 ![](figs/simulation_methods_new.jpg)
 ---
@@ -455,7 +456,7 @@ $$P_{free} = p(D^-|O^-)$$
 - Cattle population can be considered structured in the following levels: Country / Region / Herd / Animal
 
 ---
-## General approaches
+# General approaches
 
 ### Multiple-stage cluster sampling
 
@@ -478,7 +479,7 @@ $$P_{free} = p(D^-|O^-)$$
 ![](figs/bayesian_hierarchical.png)
 
 ---
-## STOC free model
+# STOC free model
 
 
 ---
