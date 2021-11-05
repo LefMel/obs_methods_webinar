@@ -360,7 +360,7 @@ magick::image_read_pdf("./tables/tab_error_3.pdf")
 ---
 # Test Characteristics
 
-- Sensitivity $\rightarrow$ prob of a posive test result (T) given (|) presence of infection(I)
+- Sensitivity $\rightarrow$ prob of a positive test result (T) given (|) presence of infection(I)
 $$Se = p(T^+|I^+)$$
 - Specificity $\rightarrow$ prob of a negative test result (T) given (|) absence of infection(I)
 $$Sp = p(T^-|I^-)$$
@@ -416,7 +416,7 @@ $$P_{free} = p(D^-|O^-)$$
 
 - (+) Applied to complex surveillance schemes (multiple surveillance components)
 
-- Simple application of the Bayes theorem: joint probability distirubtion for a set of variables
+- Simple application of the Bayes theorem: joint probability distribution for a set of variables
 
 - Described in Hood et al (2009)
 
@@ -426,7 +426,7 @@ $$P_{free} = p(D^-|O^-)$$
 - Probabilistic graphical model 
 
 - Variables $\rightarrow$ nodes
-- Relationshop between variables/Dependence $\rightarrow$ edges/arcs
+- Relationship between variables/Dependence $\rightarrow$ edges/arcs
 
 ---
 ## Bayesian Belief Networks (III)
@@ -450,7 +450,7 @@ $$P_{free} = p(D^-|O^-)$$
 
 ## Historical context
 
-- Modelling the diversity of surveillance programmes in an output-based framework may result in overparameterization
+- Modelling the diversity of surveillance programmes in an output-based framework may result in over-parameterization
 
 - Cattle population can be considered structured in the following levels: Country / Region / Herd / Animal
 
@@ -488,7 +488,7 @@ $$P_{free} = p(D^-|O^-)$$
 
 - Scenario tree modelling: apply the method on data collected from WG2
 
-- STOC free: apply the method to another disease rathen than BVD (depends on data availability)
+- STOC free: apply the method to another disease rather than BVD (depends on data availability)
 
 
 ---
