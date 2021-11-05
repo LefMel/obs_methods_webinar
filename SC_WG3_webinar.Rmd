@@ -337,13 +337,6 @@ magick::image_read_pdf("./tables/tab_error_3.pdf")
 
 
 ---
-
-=======
-## Diversity in surveillance programmes
-
-
----
->>>>>>> 405d207fe5fefe46b6ba79b2bd68b9706cf9308f
 ## Factors affecting the performance of surveillance
 
 - Test characteristics
@@ -370,8 +363,6 @@ $$Sp = p(T^-|I^-)$$
 
 ![](figs/frequency_testing.png)
 ---
-=======
->>>>>>> 405d207fe5fefe46b6ba79b2bd68b9706cf9308f
 class: inverse, center, middle
 # Methods for output-based surveillance
 
@@ -380,10 +371,6 @@ class: inverse, center, middle
 
 
 - review state-of-the-art methods used for output-based surveillance
-=======
-- review state of the art methods used for output-based surveillance
->>>>>>> 405d207fe5fefe46b6ba79b2bd68b9706cf9308f
-
 ---
 ## Secenario tree modelling (I)
 
@@ -409,15 +396,6 @@ $$P_{free} = p(D^-|O^-)$$
 ## Scenario Tree modelling (III)
 
 ![](figs/scenario_tree_figure.png)
-=======
-- Described in Martin et al (2007)
-
----
-## Secenario tree modelling (II)
-
-- Applied in free from infection countries
->>>>>>> 405d207fe5fefe46b6ba79b2bd68b9706cf9308f
-
 ---
 ## Bayesian Belief Networks (I)
 
