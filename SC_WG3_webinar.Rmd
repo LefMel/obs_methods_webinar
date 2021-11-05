@@ -196,7 +196,7 @@ magick::image_read_pdf("./tables/tab_error_1.pdf")
  
 --
 
-- When estimating prevalence by randomly sampling from a large population, the estimation will get closer and closer to the true prevalence as sample size increases
+- When estimating prevalence by randomly sampling from a large population, the estimation will get closer to the true prevalence as sample size increases
 
 ---
 # What is a probability, **Bayesian version**
@@ -212,6 +212,10 @@ magick::image_read_pdf("./tables/tab_error_1.pdf")
 --
 
 - Rare / emerging events have small probabilities of occurrence that prevent the estimation of frequencies 
+
+--
+
+$\Rightarrow$ In essence, quantifying a probability of freedom from infection from absence of evidence of presence can be seen as a Bayesian problem: how consistent are the data with the assumptions made?
 
 ---
 # Output-based standards
@@ -305,6 +309,14 @@ magick::image_read_pdf("./tables/tab_error_3.pdf")
 
  $$TSC = Cost_{surveillance}+(1 - P_{free}).Cost_{error}$$
 
+--
+- Who is paying?
+
+ - Cost for the seller or buyer?
+
+ - Spread of infection, public health, lost markets $\ldots$
+
+
 ---
 # Other outputs
 
@@ -338,13 +350,10 @@ magick::image_read_pdf("./tables/tab_error_3.pdf")
 
 ---
 <<<<<<< HEAD
+# Factors affecting the performance of surveillance
 =======
-## Diversity in surveillance programmes
-
-
----
->>>>>>> 405d207fe5fefe46b6ba79b2bd68b9706cf9308f
 ## Factors affecting the performance of surveillance
+>>>>>>> a292f93a85bda40a16e424c07318df92045629a4
 
 - Test characteristics
 
@@ -353,10 +362,9 @@ magick::image_read_pdf("./tables/tab_error_3.pdf")
 - Frequency of testing
 
 ---
-<<<<<<< HEAD
 # Test Characteristics
 
-- Sensitivity $\rightarrow$ prob of a posive test result (T) given (|) presence of infection(I)
+- Sensitivity $\rightarrow$ prob of a positive test result (T) given (|) presence of infection(I)
 $$Se = p(T^+|I^+)$$
 - Specificity $\rightarrow$ prob of a negative test result (T) given (|) absence of infection(I)
 $$Sp = p(T^-|I^-)$$
@@ -370,33 +378,40 @@ $$Sp = p(T^-|I^-)$$
 # Frequency of testing
 
 ![](figs/frequency_testing.png)
+
 ---
-=======
->>>>>>> 405d207fe5fefe46b6ba79b2bd68b9706cf9308f
 class: inverse, center, middle
 # Methods for output-based surveillance
+
 
 ---
 # Objectives of this section
 
 <<<<<<< HEAD
-- review state-of-the-art methods used for output-based surveillance
-=======
-- review state of the art methods used for output-based surveillance
->>>>>>> 405d207fe5fefe46b6ba79b2bd68b9706cf9308f
 
+- review state-of-the-art methods used for output-based surveillance
+
+- review state of the art methods used for output-based surveillance
+
+=======
+>>>>>>> a292f93a85bda40a16e424c07318df92045629a4
+
+- review state-of-the-art methods used for output-based surveillance
 ---
-## Secenario tree modelling (I)
+# Scenario tree modelling (I)
 
 - Method to estimate probability of freedom from infection 
 
 <<<<<<< HEAD
+
+=======
+>>>>>>> a292f93a85bda40a16e424c07318df92045629a4
 - (+) quantitative estimates (-) applied only in settings where infection is (assumed to be) absent
 
 - Described in Martin et al (2007)
 
 ---
-# Secenario tree modelling (II)
+# Scenario tree modelling (II)
 
 ### Output $\rightarrow$ Surveillance sensitivity
 
@@ -408,44 +423,40 @@ $$SSe = p(O^+|D^+)$$
 
 $$P_{free} = p(D^-|O^-)$$
 ---
-## Scenario Tree modelling (III)
+# Scenario Tree modelling (III)
 
 ![](figs/scenario_tree_figure.png)
-=======
+<<<<<<< HEAD
+
 - Described in Martin et al (2007)
 
+=======
+>>>>>>> a292f93a85bda40a16e424c07318df92045629a4
 ---
-## Secenario tree modelling (II)
-
-- Applied in free from infection countries
->>>>>>> 405d207fe5fefe46b6ba79b2bd68b9706cf9308f
-
----
-## Bayesian Belief Networks (I)
+# Bayesian Belief Networks (I)
 
 - Method to estimate probability of freedom from infection
 
-<<<<<<< HEAD
 - (+) Applied to complex surveillance schemes (multiple surveillance components)
 
-- Simple application of the Bayes theorem: joint probability distirubtion for a set of variables
+- Simple application of the Bayes theorem: joint probability distribution for a set of variables
 
 - Described in Hood et al (2009)
 
 ---
-## Bayesian Belief Networks (II)
+# Bayesian Belief Networks (II)
 
 - Probabilistic graphical model 
 
 - Variables $\rightarrow$ nodes
-- Relationshop between variables/Dependence $\rightarrow$ edges/arcs
+- Relationship between variables/Dependence $\rightarrow$ edges/arcs
 
 ---
-## Bayesian Belief Networks (III)
+# Bayesian Belief Networks (III)
 
 ![](figs/bayesian_network.png)
 ---
-## Simulation models (I)
+# Simulation models (I)
 
 - presence or spread of diseases and their detection with a great flexibility in terms of the range and complexity of assumptions
 
@@ -454,7 +465,7 @@ $$P_{free} = p(D^-|O^-)$$
 - Described in Meyer et al (2019); Rosendal et al (2020)
 
 ---
-## Simulation models (II)
+# Simulation models (II)
 
 ![](figs/simulation_methods_new.jpg)
 ---
@@ -462,12 +473,12 @@ $$P_{free} = p(D^-|O^-)$$
 
 ## Historical context
 
-- Modelling the diversity of surveillance programmes in an output-based framework may result in overparameterization
+- Modelling the diversity of surveillance programmes in an output-based framework may result in over-parameterization
 
 - Cattle population can be considered structured in the following levels: Country / Region / Herd / Animal
 
 ---
-## General approaches
+# General approaches
 
 ### Multiple-stage cluster sampling
 
@@ -490,7 +501,7 @@ $$P_{free} = p(D^-|O^-)$$
 ![](figs/bayesian_hierarchical.png)
 
 ---
-## STOC free model
+# STOC free model
 
 
 ---
@@ -500,12 +511,11 @@ $$P_{free} = p(D^-|O^-)$$
 
 - Scenario tree modelling: apply the method on data collected from WG2
 
-- STOC free: apply the method to another disease rathen than BVD (depends on data availability)
+- STOC free: apply the method to another disease rather than BVD (depends on data availability)
 
 
 ---
 # Thank you for your attention
 
 ![](figs/sound_control.png)
-
 
