@@ -3,6 +3,7 @@
   <head>
     <title>Output-based methodological approaches for substantiating freedom from infection</title>
     <meta charset="utf-8" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
     <link href="libs/remark-css/default.css" rel="stylesheet" />
     <link href="libs/remark-css/default-fonts.css" rel="stylesheet" />
   </head>
@@ -166,7 +167,7 @@ class: inverse, center, middle
  
  - Construct confidence intervals, estimate probabilities of error from these hypotheses
 
-![](SC_WG3_webinar_files/figure-html/unnamed-chunk-4-1.png)&lt;!-- --&gt;
+&lt;img src="SC_WG3_webinar_files/figure-html/unnamed-chunk-4-1.png" width="2096" /&gt;
 
 ---
 # What is a probability, **frequentist version**
@@ -217,7 +218,7 @@ class: inverse, center, middle
 
 --
 
-![](SC_WG3_webinar_files/figure-html/unnamed-chunk-5-1.png)&lt;!-- --&gt;
+&lt;img src="SC_WG3_webinar_files/figure-html/unnamed-chunk-5-1.png" width="1767" /&gt;
 
 ---
 # Specificity of surveillance
@@ -228,7 +229,7 @@ class: inverse, center, middle
 
  - Usually assumed to be 1 (i.e. no false positive) `\(\rightarrow\)` every positive test will be investigated until either proven to be a false positive or confirmed as a true positive
  
-![](SC_WG3_webinar_files/figure-html/unnamed-chunk-6-1.png)&lt;!-- --&gt;
+&lt;img src="SC_WG3_webinar_files/figure-html/unnamed-chunk-6-1.png" width="1767" /&gt;
 
 ---
 # Sensitivity of surveillance
@@ -237,7 +238,7 @@ class: inverse, center, middle
 
  `$$SSe = p(O^+|D^+)$$`
 
-![](SC_WG3_webinar_files/figure-html/unnamed-chunk-7-1.png)&lt;!-- --&gt;
+&lt;img src="SC_WG3_webinar_files/figure-html/unnamed-chunk-7-1.png" width="1767" /&gt;
 
 ---
 # Probability of freedom from infection
@@ -247,9 +248,9 @@ class: inverse, center, middle
   `$$P_{free} = p(D^-|O^-)$$`
 
 
-![](SC_WG3_webinar_files/figure-html/unnamed-chunk-8-1.png)&lt;!-- --&gt;
+&lt;img src="SC_WG3_webinar_files/figure-html/unnamed-chunk-8-1.png" width="1767" /&gt;
 
-- is in fact a negative predictive value
+- is in fact the negative predictive value
 
   `$$P_{free} = \frac{SSp.(1 - \pi_t)}{SSp.(1 - \pi_t) + (1-SSe) . \pi_t}$$`
   
@@ -261,7 +262,7 @@ class: inverse, center, middle
   `$$P_{free} = p(D^-|O^-)$$`
 
 
-![](SC_WG3_webinar_files/figure-html/unnamed-chunk-9-1.png)&lt;!-- --&gt;
+&lt;img src="SC_WG3_webinar_files/figure-html/unnamed-chunk-9-1.png" width="1719" /&gt;
 
 - since `\(SSp = 1\)`, can be written as:
 
@@ -310,17 +311,175 @@ class: inverse, center, middle
 
 
 ---
+
+=======
 ## Diversity in surveillance programmes
 
 
 ---
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; 405d207fe5fefe46b6ba79b2bd68b9706cf9308f
 ## Factors affecting the performance of surveillance
+
+- Test characteristics
+
+- Surveillance components
+
+- Frequency of testing
+
+---
+# Test Characteristics
+
+- Sensitivity `\(\rightarrow\)` prob of a posive test result (T) given (|) presence of infection(I)
+`$$Se = p(T^+|I^+)$$`
+- Specificity `\(\rightarrow\)` prob of a negative test result (T) given (|) absence of infection(I)
+`$$Sp = p(T^-|I^-)$$`
+
+---
+# Surveillance components
+
+![](figs/surveillance_components.png)
+
+---
+# Frequency of testing
+
+![](figs/frequency_testing.png)
+---
+=======
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; 405d207fe5fefe46b6ba79b2bd68b9706cf9308f
+class: inverse, center, middle
+# Methods for output-based surveillance
+
+---
+# Objectives of this section
+
+
+- review state-of-the-art methods used for output-based surveillance
+=======
+- review state of the art methods used for output-based surveillance
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; 405d207fe5fefe46b6ba79b2bd68b9706cf9308f
+
+---
+## Secenario tree modelling (I)
+
+- Method to estimate probability of freedom from infection 
+
+- (+) quantitative estimates (-) applied only in settings where infection is (assumed to be) absent
+
+- Described in Martin et al (2007)
+
+---
+# Secenario tree modelling (II)
+
+### Output `\(\rightarrow\)` Surveillance sensitivity
+
+- probability of detecting a positive animal/herd if the infection in the population is above the design prevalence
+
+`$$SSe = p(O^+|D^+)$$`
+
+### Output `\(\rightarrow\)` Probability of freedom from infection
+
+`$$P_{free} = p(D^-|O^-)$$`
+---
+## Scenario Tree modelling (III)
+
+![](figs/scenario_tree_figure.png)
+=======
+- Described in Martin et al (2007)
+
+---
+## Secenario tree modelling (II)
+
+- Applied in free from infection countries
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; 405d207fe5fefe46b6ba79b2bd68b9706cf9308f
+
+---
+## Bayesian Belief Networks (I)
+
+- Method to estimate probability of freedom from infection
+
+- (+) Applied to complex surveillance schemes (multiple surveillance components)
+
+- Simple application of the Bayes theorem: joint probability distirubtion for a set of variables
+
+- Described in Hood et al (2009)
+
+---
+## Bayesian Belief Networks (II)
+
+- Probabilistic graphical model 
+
+- Variables `\(\rightarrow\)` nodes
+- Relationshop between variables/Dependence `\(\rightarrow\)` edges/arcs
+
+---
+## Bayesian Belief Networks (III)
+
+![](figs/bayesian_network.png)
+---
+## Simulation models (I)
+
+- presence or spread of diseases and their detection with a great flexibility in terms of the range and complexity of assumptions
+
+- Natural extensions of the scenario tree models - well suited to represent complex disease dynamic and surveillance systems 
+
+- Described in Meyer et al (2019); Rosendal et al (2020)
+
+---
+## Simulation models (II)
+
+![](figs/simulation_methods_new.jpg)
+---
+# Bayesian prevalence estimation methods
+
+## Historical context
+
+- Modelling the diversity of surveillance programmes in an output-based framework may result in overparameterization
+
+- Cattle population can be considered structured in the following levels: Country / Region / Herd / Animal
+
+---
+## General approaches
+
+### Multiple-stage cluster sampling
+
+- random number of k herds are selected and a random sample of n animals from each herd are tested
+
+---
+# Bayesian hierarchical true prevalence estimation (I)
+
+- (+) Assumes absence of a perfect reference test
+
+- (+) Can be applied both in cases where infection is present or absent
+
+- (+) Adjusts for population structure
+
+- (+) Allows prevalence inference on the different structure levels
+
+---
+# Bayesian hierarchical true prevalence estimation (II)
+
+![](figs/bayesian_hierarchical.png)
+
+---
+## STOC free model
 
 
 ---
-class: inverse, center, middle
+# Plan for Grant Period 4
 
-# Methods for output-based surveillance
+## Two Short Term Scientific Missions on methods
+
+- Scenario tree modelling: apply the method on data collected from WG2
+
+- STOC free: apply the method to another disease rathen than BVD (depends on data availability)
+
+
+---
+# Thank you for your attention
+
+![](figs/sound_control.png)
+
+
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>

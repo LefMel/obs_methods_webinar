@@ -349,11 +349,7 @@ magick::image_read_pdf("./tables/tab_error_3.pdf")
 
 
 ---
-<<<<<<< HEAD
-# Factors affecting the performance of surveillance
-=======
 ## Factors affecting the performance of surveillance
->>>>>>> a292f93a85bda40a16e424c07318df92045629a4
 
 - Test characteristics
 
@@ -387,25 +383,12 @@ class: inverse, center, middle
 ---
 # Objectives of this section
 
-<<<<<<< HEAD
-
-- review state-of-the-art methods used for output-based surveillance
-
-- review state of the art methods used for output-based surveillance
-
-=======
->>>>>>> a292f93a85bda40a16e424c07318df92045629a4
-
 - review state-of-the-art methods used for output-based surveillance
 ---
 # Scenario tree modelling (I)
 
 - Method to estimate probability of freedom from infection 
 
-<<<<<<< HEAD
-
-=======
->>>>>>> a292f93a85bda40a16e424c07318df92045629a4
 - (+) quantitative estimates (-) applied only in settings where infection is (assumed to be) absent
 
 - Described in Martin et al (2007)
@@ -426,12 +409,7 @@ $$P_{free} = p(D^-|O^-)$$
 # Scenario Tree modelling (III)
 
 ![](figs/scenario_tree_figure.png)
-<<<<<<< HEAD
 
-- Described in Martin et al (2007)
-
-=======
->>>>>>> a292f93a85bda40a16e424c07318df92045629a4
 ---
 # Bayesian Belief Networks (I)
 
