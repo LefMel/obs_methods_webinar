@@ -196,7 +196,7 @@ magick::image_read_pdf("./tables/tab_error_1.pdf")
  
 --
 
-- When estimating prevalence by randomly sampling from a large population, the estimation will get closer and closer to the true prevalence as sample size increases
+- When estimating prevalence by randomly sampling from a large population, the estimation will get closer to the true prevalence as sample size increases
 
 ---
 # What is a probability, **Bayesian version**
@@ -212,6 +212,10 @@ magick::image_read_pdf("./tables/tab_error_1.pdf")
 --
 
 - Rare / emerging events have small probabilities of occurrence that prevent the estimation of frequencies 
+
+--
+
+$\Rightarrow$ In essence, quantifying a probability of freedom from infection from absence of evidence of presence can be seen as a Bayesian problem: how consistent are the data with the assumptions made?
 
 ---
 # Output-based standards
@@ -305,6 +309,14 @@ magick::image_read_pdf("./tables/tab_error_3.pdf")
 
  $$TSC = Cost_{surveillance}+(1 - P_{free}).Cost_{error}$$
 
+--
+- Who is paying?
+
+ - Cost for the seller or buyer?
+
+ - Spread of infection, public health, lost markets $\ldots$
+
+
 ---
 # Other outputs
 
@@ -365,6 +377,7 @@ $$Sp = p(T^-|I^-)$$
 ---
 class: inverse, center, middle
 # Methods for output-based surveillance
+
 
 ---
 # Objectives of this section
@@ -482,5 +495,4 @@ $$P_{free} = p(D^-|O^-)$$
 # Thank you for your attention
 
 ![](figs/sound_control.png)
-
 
