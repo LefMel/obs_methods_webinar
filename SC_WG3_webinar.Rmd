@@ -337,7 +337,7 @@ magick::image_read_pdf("./tables/tab_error_3.pdf")
 
 
 ---
-<<<<<<< HEAD
+
 =======
 ## Diversity in surveillance programmes
 
@@ -353,7 +353,6 @@ magick::image_read_pdf("./tables/tab_error_3.pdf")
 - Frequency of testing
 
 ---
-<<<<<<< HEAD
 # Test Characteristics
 
 - Sensitivity $\rightarrow$ prob of a posive test result (T) given (|) presence of infection(I)
@@ -379,7 +378,7 @@ class: inverse, center, middle
 ---
 # Objectives of this section
 
-<<<<<<< HEAD
+
 - review state-of-the-art methods used for output-based surveillance
 =======
 - review state of the art methods used for output-based surveillance
@@ -390,7 +389,6 @@ class: inverse, center, middle
 
 - Method to estimate probability of freedom from infection 
 
-<<<<<<< HEAD
 - (+) quantitative estimates (-) applied only in settings where infection is (assumed to be) absent
 
 - Described in Martin et al (2007)
@@ -425,7 +423,6 @@ $$P_{free} = p(D^-|O^-)$$
 
 - Method to estimate probability of freedom from infection
 
-<<<<<<< HEAD
 - (+) Applied to complex surveillance schemes (multiple surveillance components)
 
 - Simple application of the Bayes theorem: joint probability distirubtion for a set of variables
