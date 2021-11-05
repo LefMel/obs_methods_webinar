@@ -337,6 +337,13 @@ magick::image_read_pdf("./tables/tab_error_3.pdf")
 
 
 ---
+<<<<<<< HEAD
+=======
+## Diversity in surveillance programmes
+
+
+---
+>>>>>>> 405d207fe5fefe46b6ba79b2bd68b9706cf9308f
 ## Factors affecting the performance of surveillance
 
 - Test characteristics
@@ -346,6 +353,7 @@ magick::image_read_pdf("./tables/tab_error_3.pdf")
 - Frequency of testing
 
 ---
+<<<<<<< HEAD
 # Test Characteristics
 
 - Sensitivity $\rightarrow$ prob of a posive test result (T) given (|) presence of infection(I)
@@ -363,19 +371,26 @@ $$Sp = p(T^-|I^-)$$
 
 ![](figs/frequency_testing.png)
 ---
+=======
+>>>>>>> 405d207fe5fefe46b6ba79b2bd68b9706cf9308f
 class: inverse, center, middle
 # Methods for output-based surveillance
 
 ---
 # Objectives of this section
 
+<<<<<<< HEAD
 - review state-of-the-art methods used for output-based surveillance
+=======
+- review state of the art methods used for output-based surveillance
+>>>>>>> 405d207fe5fefe46b6ba79b2bd68b9706cf9308f
 
 ---
 ## Secenario tree modelling (I)
 
 - Method to estimate probability of freedom from infection 
 
+<<<<<<< HEAD
 - (+) quantitative estimates (-) applied only in settings where infection is (assumed to be) absent
 
 - Described in Martin et al (2007)
@@ -396,12 +411,21 @@ $$P_{free} = p(D^-|O^-)$$
 ## Scenario Tree modelling (III)
 
 ![](figs/scenario_tree_figure.png)
+=======
+- Described in Martin et al (2007)
+
+---
+## Secenario tree modelling (II)
+
+- Applied in free from infection countries
+>>>>>>> 405d207fe5fefe46b6ba79b2bd68b9706cf9308f
 
 ---
 ## Bayesian Belief Networks (I)
 
 - Method to estimate probability of freedom from infection
 
+<<<<<<< HEAD
 - (+) Applied to complex surveillance schemes (multiple surveillance components)
 
 - Simple application of the Bayes theorem: joint probability distirubtion for a set of variables
@@ -485,3 +509,34 @@ $$P_{free} = p(D^-|O^-)$$
 ![](figs/sound_control.png)
 
 
+=======
+- Applied to complex surveillance schemes (multiple surveillance components)
+
+- Described in Hood et al (2009)
+
+
+---
+## Bayesian Belief Networks (II)
+
+---
+## Simulation models
+
+- Stochastic simulations
+
+- Described in Meyet et al (2019)
+
+
+---
+## Bayesian prevalence estimation methods
+
+---
+# Historical context
+
+---
+# Bayesian hierarchical true prevalence estimation
+
+- Assume absence of a perfect reference test
+---
+## STOC free model
+
+>>>>>>> 405d207fe5fefe46b6ba79b2bd68b9706cf9308f
